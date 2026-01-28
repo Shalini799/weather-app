@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>WEATHER FORECAST</title>
+    <link rel="stylesheet" href="weatherforecast.css">
+    <script src="weatherforecast.js"></script>
+  </head>
+  <body>
+    <div class="container">
+    <div class="sidepart">
+      <div class="search_bar">
+        <input
+            type="text"
+            id="userLocation"
+            placeholder="Search for places..."/>
+           <select class="converter" id="converter">
+          <option>C</option>
+          <option>F</option>
+        </select>
+        <i class="fa fa-search" onclick="fetchdata()"></i>
+      </div>
+       <span style='font-size:100px;color:white;margin-left:60px;'>&#9925;</span>
+      <div class="weathericon"></div>
+      <div class="sidepart1">
+          <h6 class="cityname" id="cityname">City Name</h6>
+          <h6 class="degrees"><span id="degrees">0 </span> &deg;C</h6>
+          <h6 class="description" id="description">Sky Description</h6>
+          <div class="calen">
+            <img src="images\vector-illustration-red-calendar-icon_874723-223.avif" alt="" width="25px">
+            <h5 class="date" id="date">Date</h6>
+          </div>
+          <div class="clock">
+            <img src="c:\Users\user\Documents\shalini.ds\images\clock-137.png" alt="" width="25px"> 
+            <h5 class="time" id="time">Time</h6>
+          </div>
+      </div>
+      <div class="sidepart2">
+        <h3> Coming Five Days</h3>
+        <div class="rows" id="fiveDaysContainer">
+          <div class="row1">
+            <img src="c:\Users\user\Documents\shalini.ds\images\blue-cloud-PNG-transparent-thumb26.png" alt="" width="25px">
+            <h6> <span id="temp">7</span> &deg;C</h6>
+            <h6>Saturday</h6>
+            <h6>12-12-2025</h6>
+          </div>
+          <div class="row1">
+            <img src="c:\Users\user\Documents\shalini.ds\images\blue-cloud-PNG-transparent-thumb26.png" alt="" width="25px">
+            <h6><span id="temp">7</span>&deg;C</h6>
+            <h6>Saturday</h6>
+            <h6>12-12-2025</h6>
+          </div>
+          <div class="row1">
+            <img src="c:\Users\user\Documents\shalini.ds\images\blue-cloud-PNG-transparent-thumb26.png" alt="" width="25px">
+            <h6><span id="temp">7</span> &deg;C</h6>
+            <h6>Saturday</h6>
+            <h6>12-12-2025</h6>
+          </div>
+          <div class="row1">
+            <img src="c:\Users\user\Documents\shalini.ds\images\blue-cloud-PNG-transparent-thumb26.png" alt="" width="25px">
+            <h6><span id="temp">7</span> &deg;C</h6>
+            <h6>Saturday</h6>
+            <h6>12-12-2025</h6>
+          </div>
+          <div class="row1">
+            <img src="c:\Users\user\Documents\shalini.ds\images\blue-cloud-PNG-transparent-thumb26.png" alt="" width="25px">
+            <h6><span id="temp">7</span> &deg;C</h6>
+            <h6>Saturday</h6>
+            <h6>12-12-2025</h6>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="highlights">
+        <h3>Today's Highlights</h3>
+          <div class="icons">
+            <div class="item">Humidity
+                <span style='font-size:60px;color:white;'>&#x1F4A7;</span>
+                <h1 id="hvalue">20</h1>
+            </div>
+            <div class="item">WindSpeed
+                <span style='font-size:60px;color:aliceblue;'>&#X26C8;</span>
+                <h1 id="wvalue">2.8</h1>
+            </div>
+            <div class="item">
+              <div class="in-item">
+                <div class="sunrise" >Sunrise<span style='font-size:50px;color:rgb(251, 251, 252);'>&#9728;</span>
+                 <h5 id="s1value">7:00 Am</h5>
+                </div>
+                <div class="sunset">Sunset<span style='font-size:40px;color:white;'>&#127765;</span>
+                  <h5 id="s2value">7:00 Pm</h5>
+                </div>
+              </div>
+            </div>
+            <div class="item">Clouds
+                <span style='font-size:60px;color:rgb(253, 254, 254);'>&#9729;</span>
+                <h1 id="cvalue">8</h1>
+            </div>
+            <div class="item">Feels_like
+                <span style='font-size:60px;color:rgb(252, 252, 252);'>&#x1F5E7;</span>
+                <h1 id="uvalue">46</h1>
+            </div>
+            <div class="item">Pressure
+                <span style='font-size:60px;color:rgb(246, 248, 249);'>&#x1F32C;</span>
+                <h1 id="pvalue">1011</h1>
+            </div>
+          </div> 
+          <div class="five">
+            <div class="icons1">
+              <h1 >Today</h1>
+                <div class="todayContainer" id="todayContainer"></div>
+            </div>
+          </div>
+          </div>
+    <script src="weatherforecast.js"></script>
+  </body>
+  </html>

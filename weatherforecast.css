@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body {
+  height: 100vh;
+  margin: 0;
+  background-image: url("images/sky-is-full-of-clouds-and-stars-photo.jpg");
+ background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container{
+    display:flex;
+    align-items:flex-start;
+}
+.sidepart{
+    height:1100px;
+    width:300px;
+    /*background-color:rgb(29, 28, 28);*/
+    opacity:0.5;
+}
+.search_bar{
+    margin-top:20px;
+    margin-left:20px;
+}
+.highlights{
+    margin-left:5%;
+    margin-top:5px;
+    padding:0;
+}
+.icons{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 150px);  
+    column-gap:30px;
+    row-gap:20px;
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:150px;
+    width:260px;
+    color:white;
+    background-color:rgb(30, 31, 32) ;
+    border-radius:25px;
+    opacity:0.5;
+}
+.in-item{
+    display:flex;
+    flex-direction: column;
+}
+.in-item h5{
+    margin:0;
+}
+.sunrise{
+    display:flex;
+}
+.sunset{
+    display:flex;
+}
+.item h1{
+    margin:0;
+}
+.sidepart1{
+    color:white;
+    font-size:20px;
+    display:flex;
+    flex-direction: column;
+    gap:18px;
+    margin-left:10px;
+    height:250px;
+    width:250px;
+    background-color: rgb(30, 31, 32);
+    border-radius:25px;
+    margin-bottom:30px;
+
+}
+.sidepart1 h5,
+.sidepart1 h6 {
+    margin: 0;        
+    padding: 0;   
+    margin-left: 10px; 
+    margin-top:5px;
+}
+.sidepart h6{
+    font-size:larger;
+}
+.sidepart2{
+    height:200px;
+    width:270px;
+    background-color: rgb(30, 31, 32);
+    border-radius:25px;
+    margin-left:10px;
+}
+.sidepart2 h3{
+    margin-left:12px;
+    margin-bottom:10px;
+    color:white;
+    font-size: 20px;
+}
+.calen{
+    display:flex;
+    flex-direction: row;
+}
+.clock{
+    display:flex;
+    flex-direction: row;
+}
+.row1 h6{
+    margin:0;
+}
+.row1{
+    display:flex;
+    color:white;
+    font-size: 15px;
+    gap:5px;
+    padding:4px;
+}
+.icons1{
+    color:white;
+    display:flex;
+    align-items:flex-start;
+    margin-top:60px;
+    gap:30px;
+}
+.icons1 h1{
+    color:white;
+}
+.todayContainer{
+    display:flex;
+    gap:20px;
+    margin-left:30px;
+    width: 100%;
+    overflow-x: auto;
+    justify-content: flex-start;
+}
+.todayCard{
+    height:120px;
+    width:100px;
+    background-color: rgb(30, 31, 32);
+    opacity:0.5;
+    border-radius:25px;
+    text-align: center;
+    color:white;
+    padding-top:15px;
+}
+.todayTime{
+    font-size:14px;
+    margin-bottom:10px;
+}
+.todayTemp{
+    font-size:18px;
+    font-weight:bold;
+}
